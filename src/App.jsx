@@ -16,7 +16,6 @@ import ContactPage from "./pages/ContactPage";
 import products from "./data/products";
 
 function App() {
-  // Filter products by category here and pass as props to pages
   const seasonProducts = products.filter(function (p) {
     return p.category === "season";
   });
@@ -32,7 +31,6 @@ function App() {
 
         <main>
           <Routes>
-            {/* Pass filtered products as props to pages */}
             <Route
               path="/"
               element={
